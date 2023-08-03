@@ -1,5 +1,4 @@
 import { 
-  ChakraProvider,
   Input,
   Box,
   Center,
@@ -8,7 +7,6 @@ import {
 import {login} from './login'
 export const Card = () => {
   return(
-    <ChakraProvider>
       <Box minHeight='100vh' backgroundColor='black' padding='25px'>
         <Box height={250} backgroundColor='white' borderRadius='25px' padding='15px' display='flex' flexDirection='column' justifyContent='space-around'>
           <Center>
@@ -23,6 +21,5 @@ export const Card = () => {
           </Center>
         </Box>
       </Box>
-    </ChakraProvider>
   );
 }
