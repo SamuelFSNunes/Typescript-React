@@ -1,12 +1,11 @@
-import { Footer } from './Footer'
+import { Box } from '@chakra-ui/react';
 import { Header } from './Header/Header'
 
 export const Layout = ({ children}: any) => {
   return(
-    <>
-    <Header />
-    {children}
-    <Footer />
-    </>
+    <Box minHeight='100vh' backgroundColor='black' color="white">
+      <Header />
+      {children}
+    </Box>
   );
 }

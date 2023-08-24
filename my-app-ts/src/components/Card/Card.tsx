@@ -5,17 +5,14 @@ import {
   Button
 } from '@chakra-ui/react'
 import {login} from './login'
-import {useState, useEffect} from "react"
-import {api} from '../api'
+import {useState} from "react"
+
+
 
 export const Card = () => {
-  const [ email, setEmail] = useState('')
-  useEffect(()=>{
-    const getData =async () => {
-      const data = await api
-    }
-    getData()
-  })
+  const [ email, setEmail] = useState<string>('')
+
+
   return(
       <Box minHeight='100vh' backgroundColor='black' padding='25px'>
         <Box height={250} backgroundColor='white' borderRadius='25px' padding='15px' display='flex' flexDirection='column' justifyContent='space-around'>
